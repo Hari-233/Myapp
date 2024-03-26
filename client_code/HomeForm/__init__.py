@@ -1,5 +1,6 @@
 from ._anvil_designer import HomeFormTemplate
 from anvil import *
+import anvil.users
 import anvil.server
 import anvil.tables as tables
 import anvil.tables.query as q
@@ -50,5 +51,9 @@ class HomeForm(HomeFormTemplate):
     self.feedback_box.text = ""
 
   def button_1_click(self, **event_args):
+    """This method is called when the button is clicked"""
+    pass
+
+  def primary_color_1_click(self, **event_args):
     """This method is called when the button is clicked"""
     pass
